@@ -13,3 +13,32 @@
 @media(max-width:900px){.site-nav{gap:13px}.site-nav a{font-size:11px}.hero-grid{gap:30px}.hero-visual{min-height:390px}.photo-placeholder{height:320px}.profile-grid,.mission-grid,.aspiration-grid,.contact-wrap{gap:50px}.section-pad{padding:80px 0}}
 @media(max-width:720px){.container{width:min(100% - 32px,var(--max))}.site-header{height:70px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;left:16px;right:16px;top:62px;padding:12px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 15px 35px #102d1b1a;align-items:stretch;flex-direction:column;gap:0}.site-nav.open{display:flex}.site-nav a{padding:12px;font-size:13px;border-bottom:1px solid #f0f2ed}.site-nav a:last-child{border-bottom:0}.hero{padding-top:48px}.hero-grid{grid-template-columns:1fr;gap:28px;padding-bottom:50px}.hero h1{font-size:clamp(2.7rem,12vw,4.2rem)}.hero-lead{font-size:14px}.hero-visual{min-height:370px}.photo-frame{width:min(85%,350px)}.photo-placeholder{height:285px}.floating-stamp{right:0;bottom:8px;font-size:7px;padding:12px}.orb-one{width:300px;height:300px;right:8%}.orb-two{width:350px;height:350px;right:0}.hero-note{margin-top:30px}.bottom-inner{font-size:8px}.section-pad{padding:66px 0}.intro-grid,.profile-grid,.mission-grid,.aspiration-grid,.contact-wrap{grid-template-columns:1fr;gap:30px}.intro-grid{gap:15px}.section-heading{align-items:start;flex-direction:column;gap:15px;margin-bottom:28px}.section-heading>p{max-width:100%}.pillar-grid,.news-grid{grid-template-columns:1fr}.pillar-card{min-height:0}.pillar-card p{margin-bottom:20px}.profile-visual{max-width:340px;margin:0 auto;width:100%}.profile-photo-placeholder{height:320px}.profile-grid{gap:42px}.profile-facts{gap:8px}.profile-facts strong{font-size:11px}.mission-list article{grid-template-columns:32px 1fr}.news-art{height:160px}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item{min-height:180px;padding:15px}.gallery-item:first-child{grid-column:span 2;min-height:210px}.gallery-item strong{font-size:14px}.aspiration-form{padding:20px}.contact-panel{padding:18px}.footer-top{align-items:flex-start;flex-wrap:wrap}.footer-top>p{order:3;width:100%}.footer-bottom{flex-direction:column;gap:8px}.footer-bottom span:last-child{line-height:1.7}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+
+/* Perbaikan foto KETOK di bagian hero */
+.photo-frame {
+  overflow: hidden;
+}
+
+img.photo-placeholder {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center top;
+  padding: 0;
+  flex: none;
+  background: #dbe4d9;
+}
+
+@media (max-width: 900px) {
+  img.photo-placeholder {
+    height: 320px;
+  }
+}
+
+@media (max-width: 720px) {
+  img.photo-placeholder {
+    height: 285px;
+  }
+}
